@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+    font-family: 'Ubuntu', serif;
+}
+
+:root {
+    --margen: 35px;
+}
+
+body,
+html {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #282B28;
+    width: 100%;
+    align-items: center;
+    padding: 10px 0;
+}
+
+ul {
+    margin: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    margin-right: var(--margen) !important;
+    color: #fff;
+}
+
+.barra-menu {
+    margin-left: var(--margen);
+    display: flex;
+    align-items: center;
+}
+
+.barra-menu-list {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.barra-menu-list-item {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #282B28;
+    transition: padding 0.2s;
+    margin: 0 15px;
+}
+
+.barra-menu-list-item:hover {
+    background-color: #f3f3f3;
+    color: #D36135;
+    padding: 15px 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrusel {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.diapositiva {
+    aspect-ratio: 16 / 9;
+    border-radius: 0 0 10px 10px;
+}
+
+.mapa {
+    margin: 30px auto 0 auto;
+    text-align: center;
+    background-color: #282B28;
+    padding: 9px 15px;
+    border-radius: 10px;
+    width: 1200px;
+}
+
+.mapa h2 {
+    color: #fff
+}
+
+iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto {
+    padding: 15px;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    color: #282B28;
+    background-color: #fff;
+    margin-bottom: 17px;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 1200px;
+}
+
+.producto .boton {
+    padding: 10px 15px;
+    background-color: #D36135;
+    color: #f3f3f3;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px #9a9a9a;
+    transition: padding 0.2s;
+}
+
+.producto .boton:hover {
+    padding: 15px 20px;
+}
+
+#productos-destacados,
+#productos {
+    margin: 30px auto;
+    background-color: #282B28;
+    color: #fff;
+    text-align: center;
+    height: auto;
+    padding: 10px 0 0 0;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #282B28;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin: 6em;
+}
+
+
+
+/* MEDIA QUERYS */
+
+@media (width < 1100px) {
+    :root {
+        --margen: 2vw !important;
+    }
+
+    header {
+        padding: 2.8vw 0;
+        height: 4vw;
+    }
+
+    h1 {
+        font-size: 3vw !important;
+    }
+
+    .barra-menu-list {
+        height: 30px;
+    }
+
+    .barra-menu-list-item {
+        padding: .8vw 1.3vw;
+        font-size: 1.2vw !important;
+        margin: 0 1vw;
+    }
+
+    .barra-menu-list-item:hover {
+        padding: 1vw 1.5vw;
+    }
+
+    .carrusel {
+        width: 800px;
+    }
+
+    .mapa {
+        width: 800px;
+    }
+
+    #productos-destacados {
+        width: 800px;
+    }
+
+    .productos {
+        width: 800px;
+    }
+}
+
+@media (width < 500px) {
+
+    /* TODO agregar media para telefonos */
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .barra-menu {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 8vw !important;
+        margin-right: 0;
+    }
+
+    .barra-menu-list {
+        padding: 0;
+    }
+
+    .barra-menu-list-item {
+        font-size: 3vw !important;
+    }
+
+    .carrusel {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .mapa {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #productos-destacados {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .productos {
+        width: 100%;
+    }
+
+    .producto {
+        width: 90%;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    footer {
+        height: auto;
+    }
+}
+
+.main-form {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    margin: auto;
+    
+}
+.body-contacto {
+    /*background-color: #000;*/
+    background-image: url(/CodoACodo-main/static/img/img-font.jpg);
+}
+#contactoForm {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.form-registro {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.form-registro h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.control {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+.form-registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.form-registro .boton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.container {
+    background-color: rgba(15, 104, 126, 0.6);
+    border-radius: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: auto;
+    margin: 0%;
+    color: rgb(196, 227, 222);
+
+}
+.section {
+    text-align: justify;
+    font-size: larger;
+}
+.body-acercade{
+    background: #063240;
+}
+.container p {
+    background: #097884;
+    border-radius: 1%;
+    text-align: start;
+    padding: 13px;
+}
