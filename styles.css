@@ -273,6 +273,7 @@ footer {
 .body-contacto {
     /*background-color: #000;*/
     background-image: url(/CodoACodo-main/static/img/img-font.jpg);
+    
 }
 #contactoForm {
     margin: 0%;
@@ -300,9 +301,9 @@ footer {
 .control {
     width: 100%;
     background: #24303c;
-    padding: 10px;
+    padding: 9px;
     border-radius: 4px;
-    margin-bottom: 16px;
+    margin-bottom: 9px;
     border: 1px solid #1f53c5;
     font-family: 'calibri';
     font-size: 18px;
