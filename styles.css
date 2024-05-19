@@ -14,12 +14,19 @@ html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 header {
     display: flex;
     justify-content: center;
-    background-color: #282B28;
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     width: 100%;
     align-items: center;
     padding: 10px 0;
@@ -86,7 +93,10 @@ main {
 .mapa {
     margin: 30px auto 0 auto;
     text-align: center;
-    background-color: #282B28;
+        background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     padding: 9px 15px;
     border-radius: 10px;
     width: 1200px;
@@ -115,7 +125,7 @@ iframe {
     width: 100%;
     border-radius: 10px;
     aspect-ratio: 4 / 3;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .productos {
@@ -142,7 +152,10 @@ iframe {
 #productos-destacados,
 #productos {
     margin: 30px auto;
-    background-color: #282B28;
+        background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: #fff;
     text-align: center;
     height: auto;
@@ -151,13 +164,17 @@ iframe {
 }
 
 footer {
-    background-color: #282B28;
+        background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     height: 50px;
     color: #fff;
     text-align: center;
     padding: 15px;
-    margin: 6em;
+    /* margin: 6em; */
 }
+
 
 
 
@@ -263,18 +280,6 @@ footer {
     }
 }
 
-.main-form {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    margin: auto;
-    
-}
-.body-contacto {
-    /*background-color: #000;*/
-    background-image: url(/CodoACodo-main/static/img/img-font.jpg);
-    
-}
 #contactoForm {
     margin: 0%;
     padding: 0%;
@@ -286,8 +291,7 @@ footer {
     width: 400px;
     background: #24303c;
     padding: 30px;
-    margin: auto;
-    margin-top: 100px;
+    margin: 50px auto;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
@@ -316,19 +320,34 @@ footer {
 }
 .form-registro .boton {
     width: 100%;
-    background: #1f53c5;
     border: none;
     padding: 12px;
     color: white;
     margin: 16px 0;
     font-size: 16px;
+    border-radius: 5px;
 }
+
+.form-registro .boton[type="submit"]{
+    background: #1f53c5;
+}
+.form-registro .boton[type="submit"]:hover{
+    background-color: #2768f4;
+}
+
+.form-registro .boton[type="reset"]{
+    background-color: #ca0000 !important;
+}
+.form-registro .boton[type="reset"]:hover{
+    background-color: #f82020 !important;
+}
+
 .container {
     background-color: rgba(15, 104, 126, 0.6);
     border-radius: 2%;
     font-family: Arial, Helvetica, sans-serif;
-    padding: auto;
-    margin: 0%;
+    padding: 15px 20px;
+    margin: 50px auto;
     color: rgb(196, 227, 222);
 
 }
@@ -336,12 +355,10 @@ footer {
     text-align: justify;
     font-size: larger;
 }
-.body-acercade{
-    background: #063240;
-}
+
 .container p {
     background: #097884;
-    border-radius: 1%;
+    border-radius: 10px;
     text-align: start;
     padding: 13px;
 }
